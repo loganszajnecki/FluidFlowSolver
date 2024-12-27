@@ -29,6 +29,8 @@ if (ENABLE_LEGACY)
 else()
     # Create the C++ executable for the new version
     add_executable(Fluidix 
+        src/Grid.cpp
+        src/Solver.cpp
         src/Fluidix.cpp)
     
     # Add the include directory for the C++ target
